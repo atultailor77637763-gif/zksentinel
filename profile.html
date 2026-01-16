@@ -1,0 +1,168 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZKSentinel - Your Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="matrix-bg"></div>
+    <div id="glitch-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-container">
+                    <div class="logo-text">ZK<span class="highlight">Sentinel</span></div>
+                    <div class="logo-subtitle">QUANTUM RACING PROTOCOL</div>
+                </div>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="profile.html" class="nav-link">Profile</a>
+                <div class="wallet-connect" id="wallet-connect">
+                    <span class="wallet-text">Connected</span>
+                    <div class="wallet-icons">
+                        <div style="width: 8px; height: 8px; background: #27ca3f; border-radius: 50%; box-shadow: 0 0 10px #27ca3f;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Header -->
+    <div class="profile-header">
+        <div class="profile-header-content">
+            <div class="profile-avatar">👤</div>
+            <div class="profile-info">
+                <h1>Player</h1>
+                <p>Wallet: 0x0000... 0000</p>
+                <div class="profile-stats-mini">
+                    <div>
+                        <div class="stat-mini-value">0</div>
+                        <div class="stat-mini-label">Coins</div>
+                    </div>
+                    <div>
+                        <div class="stat-mini-value">0</div>
+                        <div class="stat-mini-label">Proofs</div>
+                    </div>
+                    <div>
+                        <div class="stat-mini-value">Lvl 0</div>
+                        <div class="stat-mini-label">Level</div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-actions">
+                <button class="action-btn">Edit Profile</button>
+                <button class="action-btn">Download Stats</button>
+                <button class="action-btn">Share Profile</button>
+                <button class="action-btn">Settings</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Content -->
+    <div class="profile-content">
+        <!-- Main Stats -->
+        <div class="stats-section">
+            <h2>PLAYER STATISTICS</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-card-value">0</div>
+                    <div class="stat-card-label">Total Coins</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-value">0</div>
+                    <div class="stat-card-label">ZK Proofs</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-value">0s</div>
+                    <div class="stat-card-label">Best Lap</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-value">0</div>
+                    <div class="stat-card-label">Level</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-value">0</div>
+                    <div class="stat-card-label">Total Races</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-value">0</div>
+                    <div class="stat-card-label">Achievements</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div>
+            <!-- Achievements -->
+            <div class="achievements-section">
+                <h2>ACHIEVEMENTS</h2>
+                <div class="achievements-grid" id="achievements-grid">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Social Connections -->
+            <div class="social-section" style="margin-top: 2rem;">
+                <h2>SOCIAL CONNECTIONS</h2>
+                <div class="social-list" id="social-list">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NFT Gallery -->
+    <div class="profile-content" style="grid-column: 1 / -1;">
+        <div class="nft-section">
+            <h2>NFT COLLECTION</h2>
+            <div class="nft-grid">
+                <div class="nft-card">
+                    <div class="nft-image">🏁</div>
+                    <div class="nft-info">
+                        <div class="nft-name">First Race</div>
+                        <div class="nft-id">#001</div>
+                    </div>
+                </div>
+                <div class="nft-card">
+                    <div class="nft-image">⚡</div>
+                    <div class="nft-info">
+                        <div class="nft-name">Speed Demon</div>
+                        <div class="nft-id">#002</div>
+                    </div>
+                </div>
+                <div class="nft-card">
+                    <div class="nft-image">💰</div>
+                    <div class="nft-info">
+                        <div class="nft-name">Coin Collector</div>
+                        <div class="nft-id">#003</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Avatar Modal -->
+    <div id="avatar-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Customize Your Avatar</h3>
+                <span class="close">&times;</span>
+            </div>
+            <p style="color: #888; margin-bottom: 1.5rem;">Coming soon!  More avatar customization options. </p>
+        </div>
+    </div>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>
